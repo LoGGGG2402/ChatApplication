@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BasicMessenger</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="logout">Log Out</string>
+    <string name="avatar">Avatar</string>
+    <string name="display_name">Display Name</string>
+    <string name="last_message">Last Message</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="send">Send</string>
+    <string name="message">Message</string>
+    <string name="time">Time</string>
+    <string name="create_chat">Create Chat</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+</resources>
