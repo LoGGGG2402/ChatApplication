@@ -49,9 +49,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        askNotificationPermission()
         checkUser()
+        askNotificationPermission()
+        setContentView(binding.root)
         binding.rvChats.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         getChats()
 
@@ -119,6 +119,10 @@ class MainActivity : AppCompatActivity() {
             // User isn't signed in
             Toast.makeText(this, "User not signed in", Toast.LENGTH_SHORT).show()
             Intent(this, LoginActivity::class.java).also {
+                Toast.makeText(this, "User not saaaaaaigned in", Toast.LENGTH_SHORT).show()
+                // Check has Login Activity in stack
+                it.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                Toast.makeText(this, "User not signesfdsfsdfdsfsdfsdfsdfd in", Toast.LENGTH_SHORT).show()
                 startActivity(it)
             }
         }

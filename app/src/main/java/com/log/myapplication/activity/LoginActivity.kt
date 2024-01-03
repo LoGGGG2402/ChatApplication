@@ -24,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener {
+            Toast.makeText(this, "Login", Toast.LENGTH_SHORT).show()
             val email = binding.etEmail.text.toString()
             val password = binding.etPassword.text.toString()
 
@@ -31,7 +32,6 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter text in email/pw", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
             loginUser(email, password)
         }
 
